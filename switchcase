@@ -1,0 +1,28 @@
+package switchcase;
+
+import java.util.Scanner;
+public class Switchcase {
+    public static void main(String[] args) {
+        int choice;
+        System.out.println("pick one: 1.Hi\t2. Hello\t3. Hey\t ");
+        Scanner sc = new Scanner(System.in);
+        choice = sc.nextInt();
+        switch(choice){
+            case 1: System.out.println("you said Hi");
+                break;
+             case 2: System.out.println("you said Hello");
+                 break;
+            case 3: System.out.println("you said Hey");
+                break;
+            default: System.out.println("invalid statement");
+        }
+    }
+}
+    
+  output:
+    
+ run:
+pick one: 1.Hi	2. Hello	3. Hey	 
+3
+you said Hey
+BUILD SUCCESSFUL (total time: 2 seconds)
