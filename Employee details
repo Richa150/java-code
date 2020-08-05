@@ -1,0 +1,29 @@
+class Employees{
+	String name;
+	int year;
+	double salary;
+	String address;
+	Employees(String n,int yr, double sal,String add){
+		name = n;
+		year = yr;
+		salary = sal;
+		address = add;
+	}
+	public void display(){
+		System.out.println(name + " \t" + year +" \t"  + address );
+	}
+}
+	class Other{
+		public static void main(String args[]){
+			Employees e1 = new Employees("Robert",1994,10000,"64c-wallastreet");
+			Employees e2 = new Employees("Sam",2000,20000,"680-wallastreet");
+			Employees e3 = new Employees("john",1999,30000,"268-wallastreet");
+			
+	System.out.println("name\tyear\taddress");
+	e1.display();
+	e2.display();
+	e3.display();
+	}
+	}
+	
+
